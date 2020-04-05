@@ -60,6 +60,16 @@ GEM
       zeitwerk (~> 2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    aws-eventstream (1.0.3)
+    aws-sdk (2.11.483)
+      aws-sdk-resources (= 2.11.483)
+    aws-sdk-core (2.11.483)
+      aws-sigv4 (~> 1.0)
+      jmespath (~> 1.0)
+    aws-sdk-resources (2.11.483)
+      aws-sdk-core (= 2.11.483)
+    aws-sigv4 (1.1.1)
+      aws-eventstream (~> 1.0, >= 1.0.2)
     bcrypt (3.1.13)
     bindex (0.8.1)
     bootsnap (1.4.6)
@@ -87,6 +97,7 @@ GEM
       ruby-vips (>= 2.0.17, < 3)
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)
+    jmespath (1.4.0)
     launchy (2.5.0)
       addressable (~> 2.7)
     letter_opener (1.7.0)
@@ -209,6 +220,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_storage_validations (~> 0.8.8)
+  aws-sdk (~> 2)
   bootsnap (>= 1.4.2)
   byebug
   devise (~> 4.7)
