@@ -1,6 +1,8 @@
 module ApplicationHelper
     def embedded_svg(path)
-        File.open("app/assets/images/#{path}", "rb") {|file| raw(file.read) }
+        #File.open("app/assets/images/#{path}", "rb") {|file| raw(file.read) }
+        #s3.bucket('copinsta').object('key').get(response_target: '/path/to/file')
+        AWS_BUCKET.object("assets/images/#{path}")
     end
 
     def user_avatar(user)
